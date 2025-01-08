@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "push": "clasp push",
+    "deploy": "npm run build && npm run push",
+    "build:watch": "node esbuild.mjs --watch",
+    "push:watch": "clasp push --watch"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.86",
+    "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "esbuild": "^0.20.2",
+    "glob": "^10.4.5",
+    "ts-node": "^10.9.2"
+  }
+}

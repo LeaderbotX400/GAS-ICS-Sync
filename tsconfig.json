@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "target": "ES2019",
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "utils/*": [
+                "src/utils/*"
+            ],
+            "types/*": [
+                "src/types/*"
+            ],
+        },
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
